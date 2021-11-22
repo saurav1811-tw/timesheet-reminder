@@ -27,5 +27,5 @@ Checking Cron Job:<br><br>
 Important System level Setup References:<br>
 1) Make the bash script executable to all users by running following command:<br><br>
 *chmod +x /usr/local/bin/timesheet_reminder.sh*<br><br>
-1) Crontab having Full Disk Access in macOS: https://apple.stackexchange.com/questions/378553/crontab-operation-not-permitted<br>
-2) Close macOS terminal automatically when process exits: https://www.howtogeek.com/409849/how-to-close-the-macos-terminal-automatically-when-a-process-exits/<br>
+2) Crontab having Full Disk Access in macOS: https://apple.stackexchange.com/questions/378553/crontab-operation-not-permitted<br>
+3) Close macOS terminal automatically when process exits: https://www.howtogeek.com/409849/how-to-close-the-macos-terminal-automatically-when-a-process-exits/<br>
