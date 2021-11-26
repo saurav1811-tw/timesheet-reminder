@@ -1,7 +1,8 @@
 # timesheet-reminder
 
 This automation bash script helps you remind to fill your timesheets every Friday (First Half).<br>
-Save it in /usr/local/bin folder.<br><br><br>
+Save it in /usr/local/bin folder.<br>
+NOTE: This app is only for Mac/Linux.<br><br><br>
 
 
 Adding Environment Variables (.zshenv file):<br>
@@ -17,8 +18,9 @@ NOTE: If you have older version of mac then you can setup the above environment 
 
 
 Adding Cron Job:<br><br>
-*crontab -e<br>
-0/30 9-12 * * 5  open -a Terminal.app /usr/local/bin/timesheet_reminder.sh*<br><br>
+*crontab -e*<br>
+Add this line in the opened crontab file:<br><br>
+*0/30 9-12 * * 5  open -a Terminal.app /usr/local/bin/timesheet_reminder.sh*<br><br>
 
 Checking Cron Job:<br><br>
 *crontab -l*<br><br><br>
@@ -29,5 +31,5 @@ Important System level Setup References:<br>
 *chmod 755 /usr/local/bin/timesheet_reminder.sh*<br><br>
 2) Crontab having Full Disk Access in macOS: https://apple.stackexchange.com/questions/378553/crontab-operation-not-permitted<br>
 3) Close macOS terminal automatically when process exits: https://www.howtogeek.com/409849/how-to-close-the-macos-terminal-automatically-when-a-process-exits/<br>
-4) Make the bash script default executable by iTerm / any other terminal app: https://apple.stackexchange.com/questions/130587/lsopenurlswithrole-failed-with-error-10810-downloaded-app-does-not-start
-5) To install iTerm, refer this: https://iterm2.com/
+4) Make the bash script default executable by iTerm / any other terminal app: https://apple.stackexchange.com/questions/130587/lsopenurlswithrole-failed-with-error-10810-downloaded-app-does-not-start<br>
+5) To install iTerm, refer this: https://iterm2.com/<br>
