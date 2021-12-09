@@ -24,7 +24,7 @@ return $result
 }
 
 
-dt=$(date '+%Y-%m-%d')
+dt=$(date '+%-Y-%-m-%-d')
 source ~/.zshenv
 if [[ $TIMESHEET_REMINDER_RC -ne 0 ]] || [[ $TIMESHEET_REMINDER_DATE -ne $dt ]]
   then
