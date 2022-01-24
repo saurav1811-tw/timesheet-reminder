@@ -32,10 +32,8 @@ if [[ $TIMESHEET_REMINDER_RC -ne 0 ]] || [[ $TIMESHEET_REMINDER_DATE -ne $dt ]]
   timesheet_reminder
   rc=$? 
   #Update TIMESHEET_REMINDER_RC, TIMESHEET_REMINDER_DATE Environment Variables
-  sed '/TIMESHEET_REMINDER_RC/d' ~/.zshenv > ~/.zshenv_tmp1
-  sed '/TIMESHEET_REMINDER_DATE/d' ~/.zshenv_tmp1 > ~/.zshenv_tmp2
-  cp -f ~/.zshenv_tmp2 ~/.zshenv
-  rm -rf ~/.zshenv_tmp1 ~/.zshenv_tmp2
+  sed -i '' '/TIMESHEET_REMINDER_RC/d' ~/.zshenv
+  sed -i '' '/TIMESHEET_REMINDER_DATE/d' ~/.zshenv
   echo "export TIMESHEET_REMINDER_RC=$rc" >> ~/.zshenv
   echo "export TIMESHEET_REMINDER_DATE=$dt" >> ~/.zshenv
 else
