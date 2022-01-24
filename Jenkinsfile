@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage ('Deploy') {
             steps {
-                echo "Hello World"
+                echo "My Timesheet Reminder Deployment"
                 sh '''
                     pwd
                     ls -ltrh
