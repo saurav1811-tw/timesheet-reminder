@@ -1,6 +1,10 @@
 def user = "sauravmohapatra"
 
 pipeline {
+
+    environment {
+        USER = "${user}"
+    }
     
     agent any
 
@@ -13,7 +17,7 @@ pipeline {
                     ls -ltrh
                     cp timesheet_reminder.sh /usr/local/bin/
                     chmod 755 /usr/local/bin/timesheet_reminder.sh
-                    chown ${user}:admin /usr/local/bin/timesheet_reminder.sh
+                    chown ${USER}:admin /usr/local/bin/timesheet_reminder.sh
                 '''
             }
         }
