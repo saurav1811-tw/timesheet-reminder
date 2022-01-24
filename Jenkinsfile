@@ -6,6 +6,7 @@ pipeline {
         stage ('Deploy') {
             steps {
                 echo "Hello World"
+                sh 'pwd'
             }
         }
     }
