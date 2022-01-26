@@ -3,8 +3,7 @@ PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 timesheet_reminder()
 {
-echo "Hello, Have you filled your timesheet Y/N ?"
-read timesheet_flag
+read -p "Hello, Have you filled your timesheet Y/N ? " timesheet_flag
 local result=255
 
 if [[ $timesheet_flag == "Y" ]] || [[ $timesheet_flag == "y" ]]
