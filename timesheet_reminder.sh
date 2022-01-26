@@ -25,18 +25,21 @@ return $result
 
 dt=$(date '+%-Y-%-m-%-d')
 source ~/.zshenv
+
 if [[ $TIMESHEET_REMINDER_RC -ne 0 ]] || [[ $TIMESHEET_REMINDER_DATE -ne $dt ]]
   then
-  #Run the function
+
   timesheet_reminder
-  rc=$? 
-  #Update TIMESHEET_REMINDER_RC, TIMESHEET_REMINDER_DATE Environment Variables
+  rc=$?
+
   sed -i '' '/TIMESHEET_REMINDER_RC/d' ~/.zshenv
   sed -i '' '/TIMESHEET_REMINDER_DATE/d' ~/.zshenv
   echo "export TIMESHEET_REMINDER_RC=$rc" >> ~/.zshenv
   echo "export TIMESHEET_REMINDER_DATE=$dt" >> ~/.zshenv
+
 else
   echo "You have already filled Timesheet for $dt and confirmed!"
 fi
+
 sleep 10
 exit
