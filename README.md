@@ -30,8 +30,9 @@ Checking Crontab file:<br><br>
 Important System level Setup References:<br>
 1) Make the bash script executable to all users by running following command:<br><br>
 *chmod 755 /usr/local/bin/timesheet_reminder.sh*<br><br>
-2) Crontab having Full Disk Access in Mac: https://apple.stackexchange.com/questions/378553/crontab-operation-not-permitted<br>
-3) Close Mac terminal automatically when process exits: https://www.howtogeek.com/409849/how-to-close-the-macos-terminal-automatically-when-a-process-exits/<br>
-4) Make the bash script default executable by iTerm / any other terminal app: https://apple.stackexchange.com/questions/130587/lsopenurlswithrole-failed-with-error-10810-downloaded-app-does-not-start<br>
-5) To handle value too great for base issue: https://titanwolf.org/Network/Articles/Article?AID=fd301104-702a-43be-a11c-dce8776b9170<br>
-6) To install iTerm, refer this: https://iterm2.com/<br>
+2) If using Jenkins pipeline, then update 'user' variable value in Jenkinsfile to your Mac Username<br><br>
+3) Crontab having Full Disk Access in Mac: https://apple.stackexchange.com/questions/378553/crontab-operation-not-permitted<br>
+4) Close Mac terminal automatically when process exits: https://www.howtogeek.com/409849/how-to-close-the-macos-terminal-automatically-when-a-process-exits/<br>
+5) Make the bash script default executable by iTerm / any other terminal app: https://apple.stackexchange.com/questions/130587/lsopenurlswithrole-failed-with-error-10810-downloaded-app-does-not-start<br>
+6) To handle value too great for base issue: https://titanwolf.org/Network/Articles/Article?AID=fd301104-702a-43be-a11c-dce8776b9170<br>
+7) To install iTerm, refer this: https://iterm2.com/<br>
