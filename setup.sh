@@ -12,7 +12,7 @@ source ~/.zshrc
 # Step3: Set cronjob in crontab file
 crontab -e
 # Add cron expression with command in the file as shown below-
-# 0/30 9-12 * * 5 open -a Terminal.app /usr/local/bin/timesheet_reminder.sh
+# 0/30 9-12 * * 5 open -a iTerm /usr/local/bin/timesheet_reminder.sh
 
 # Step4: Check crontab file for job setup
 crontab -l
